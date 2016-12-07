@@ -1,0 +1,331 @@
+/* keyframe */
+@-webkit-keyframes mymove {
+    0% {margin-top: 50px;}
+    100% {margin-top: -10px;}
+}
+
+@keyframes mymove {
+    0% {margin-top: 50px;}
+    100% {margin-top: -10px;}
+}
+
+/* responsive */
+/* 把最下面3個放到media中 */
+@media only screen and (max-width: 767px) {
+
+    @-webkit-keyframes mymove {
+        0% {margin-top: 50px;}
+        100% {margin-top: 0px;}
+    }
+
+    @keyframes mymove {
+        0% {margin-top: 50px;}
+        100% {margin-top: 0px;}
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        background-color: white;
+    }
+
+    .dropdown-menu > li > a {
+        color: gray; 
+    }
+
+    .dropdown-menu > li > a:hover {
+        color: gray; 
+    }
+}
+/* Slogan Adjust */
+p.site-slogan {
+    right: 0px;
+}
+
+/* Bootstrap Modifications */
+body{
+    background-color: #F4F1EA;
+}
+
+.navbar {
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {;
+    background-color: gray; 
+}
+
+/* 這是新的 */
+.dropdown-menu {
+    background-color: white;
+}
+
+.caret {
+    color: #F4F1EA;
+}
+
+.dropdown-menu > li > a {
+    color: gray; 
+}
+
+.dropdown-menu > li > a:hover {
+    color: gray; 
+}
+
+#main-title {
+   padding-top: 10px;
+   font-family: cursive;
+   color: #F4F1EA;
+}
+
+#log-in{
+    color: #F4F1EA;
+}
+
+#log-in:hover {
+    font-weight: 600;
+    background-color: black; 
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #F4F1EA;
+ }
+
+.navbar-default .navbar-nav > li > a:hover {
+    font-weight: 600;
+    color: #F4F1EA;
+    background-color: black;
+}
+
+.navbar-default .navbar-nav > li > a:visited {
+    font-weight: 600;
+    color: #F4F1EA;
+    background-color: black;
+}
+
+
+
+            
+
+            /*.panel {
+                padding: 0;
+                background-color: #fff;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;
+                -webkit-box-shadow: 0 1px 3px #666;
+                -moz-box-shadow: 0 1px 3px #666;
+                box-shadow: 0 1px 3px #666;
+            }
+
+            
+
+            #banner-wrap {
+                width: 100%;
+                padding: 50px 0 0;
+            }
+
+            #banner {
+                margin: 0 auto;
+                display: block;
+                width: 1024px;
+                height: 380px;
+            }
+
+            
+
+            #banner-content {
+                -webkit-box-shadow: inset 0px 4px 9px -5px #444;
+                box-shadow: inset 0px 4px 9px -5px #444;
+                -moz-box-shadow: inset 0px 4px 9px -5px #444;
+                -ms-box-shadow: inset 0px 4px 9px -5px #444;
+                -o-box-shadow: inset 0px 4px 9px -5px #444;
+                padding: 0;
+                height: 100%;
+                color: #4477ff;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+            }
+
+            #banner-content .text0 {
+                font-family: 'Fredericka the Great';
+                font-size: 60px;
+                color: #445566;
+                -moz-transform: scale(1) rotate(90deg) translateX(110px) translateY(-350px) skewX(0deg) skewY(0deg);
+                -webkit-transform: scale(1) rotate(90deg) translateX(110px) translateY(-350px) skewX(0deg) skewY(0deg);
+                -o-transform: scale(1) rotate(90deg) translateX(110px) translateY(-350px) skewX(0deg) skewY(0deg);
+                -ms-transform: scale(1) rotate(90deg) translateX(110px) translateY(-350px) skewX(0deg) skewY(0deg);
+                transform: scale(1) rotate(90deg) translateX(110px) translateY(-350px) skewX(0deg) skewY(0deg);
+            }
+
+            #banner-content .text1 {
+                font-family: 'Simonetta';
+                font-size: 40px;
+                font-style: italic;
+                color: #6688ff;
+                -moz-transform: scale(1) rotate(0deg) translateX(85px) translateY(180px) skewX(0deg) skewY(0deg);
+                -webkit-transform: scale(1) rotate(0deg) translateX(85px) translateY(180px) skewX(0deg) skewY(0deg);
+                -o-transform: scale(1) rotate(0deg) translateX(85px) translateY(180px) skewX(0deg) skewY(0deg);
+                -ms-transform: scale(1) rotate(0deg) translateX(85px) translateY(180px) skewX(0deg) skewY(0deg);
+                transform: scale(1) rotate(0deg) translateX(85px) translateY(180px) skewX(0deg) skewY(0deg);
+            }
+
+            #banner-content .text2 {
+                font-family: 'Squada One';
+                color: #999;
+                font-size: 22px;
+                -moz-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+                -webkit-transform: scale(1) rotate(-90deg) translateX(-37px) translateY(310px) skewX(0deg) skewY(0deg);
+                -o-transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+                -ms-transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+                transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+            }
+
+            #banner-content .text3 {
+                font-family: 'Holtwood One SC';
+                font-size: 62px;
+                text-align: right;
+                line-height: 62px;
+                color: #444;
+                -moz-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-15px) skewX(0deg) skewY(0deg);
+                -webkit-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-15px) skewX(0deg) skewY(0deg);
+                -o-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-15px) skewX(0deg) skewY(0deg);
+                -ms-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-15px) skewX(0deg) skewY(0deg);
+                transform: scale(1) rotate(0deg) translateX(-230px) translateY(-15px) skewX(0deg) skewY(0deg);
+            }
+
+            #banner-content .text4 {
+                font-family: 'Holtwood One SC';
+                font-size: 110px;
+                text-align: right;
+                color: #777;
+                -moz-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-280px) skewX(0deg) skewY(0deg);
+                -webkit-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-280px) skewX(0deg) skewY(0deg);
+                -o-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-280px) skewX(0deg) skewY(0deg);
+                -ms-transform: scale(1) rotate(0deg) translateX(-230px) translateY(-280px) skewX(0deg) skewY(0deg);
+                transform: scale(1) rotate(0deg) translateX(-230px) translateY(-280px) skewX(0deg) skewY(0deg);
+            }
+
+            #bottom {
+                width: 1024px;
+                margin: 30px auto;
+                padding: 0 0;
+                position: relative;
+            }*/
+
+            
+
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+}
+/* flip the pane when hovered */
+.flip-container.hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+/**
+ *  back extra styling
+ */
+.back {
+    background-color: #252326;
+    background: url('http://fc08.deviantart.net/fs42/f/2009/070/1/c/Purple_Blur__a_wallpaper_by_Sostopher.jpg') center center scroll;
+}
+
+
+.flip-modal{
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.3);
+}
+
+.flip-modal p{
+    margin: 20px;
+    font: 15px Arial, Helvetica, sans-serif;
+}
+
+.flip-modal button{
+    padding: 7px 30px;
+    background: #888888;
+    color: white;
+    border: 0px none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.flip-modal .right{
+    text-align: right;
+}
+
+/*
+.large-buttons{
+    padding: 10px 30px;
+    font: 15px Arial;
+    display: block;
+    background: #51749C;
+    color: #FFFFFF;
+    border: 0px none;
+    border-radius: 5px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+*/
