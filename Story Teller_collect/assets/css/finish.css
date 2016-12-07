@@ -10,7 +10,6 @@
 }
 
 /* responsive */
-/* 把最下面3個放到media中 */
 @media only screen and (max-width: 767px) {
 
 	@-webkit-keyframes mymove {
@@ -64,7 +63,6 @@ body{
     background-color: gray; 
 }
 
-/* 這是新的 */
 .dropdown-menu {
 	background-color: white;
 }
@@ -91,7 +89,6 @@ body{
 	color: #F4F1EA;
 }
 
-/* 這裡到finish有改自己看 */
 #log-in:hover {
 	font-weight: 600;
 	background-color: black; 
@@ -141,6 +138,11 @@ figure > figcaption > h3 > small {
 }
 
 .finish {
+	height: 200px;
+	text-align: center;
+}
+
+.editing {
 	height: 200px;
 	text-align: center;
 }
@@ -195,5 +197,18 @@ figure .btn-primary {
 } 
 
 .finish:hover {
+	background-color: #DCDCDC;
+}
+
+.editing:hover .btn-primary {
+	display: inline-block;
+	border-width: 2px;
+	background-color: #363539;
+	border-color: white;
+	animation: mymove 0.5s ;
+	animation-fill-mode: forwards;
+} 
+
+.editing:hover {
 	background-color: #DCDCDC;
 }
