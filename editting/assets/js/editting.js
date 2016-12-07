@@ -1,4 +1,4 @@
-function countDown(){
+//function countDown(){
     var minID = setInterval(function () {
         minutePlay();
     }, 10000);
@@ -11,7 +11,7 @@ function countDown(){
             window.clearInterval(secID);
         }
     }, 1000);
-}
+//}
 
 function secondPlay() {
     
