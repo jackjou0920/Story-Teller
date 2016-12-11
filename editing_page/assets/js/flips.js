@@ -7,13 +7,17 @@ function flip_dialog(message, html) {
     $('.flip-container .back').height($('.flip-container .front').height());
 	
 	$('.flip-container').addClass('hover');
-	
+
+	$("#comment").hide();
+  	
 }
 
 
 function flip_dialog2(message, html) {
 	
 	$('.flip-container').removeClass('hover');
+	
+	$("#comment").show();
 	
 }
 
