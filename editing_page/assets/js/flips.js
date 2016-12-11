@@ -3,9 +3,7 @@
  */
 
 function flip_dialog(message, html) {	
-	// fix backstyle
-    $('.flip-container .back').height($('.flip-container .front').height());
-	
+    
 	$('.flip-container').addClass('hover');
 
 	$("#comment").hide();
