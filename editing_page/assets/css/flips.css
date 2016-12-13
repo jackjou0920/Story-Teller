@@ -17,8 +17,8 @@
 }
 
 .flip-container, .back {
-	width: 100%;
-    height: 100%;
+	width: 800px;
+	margin: 0px auto;
 }
 
 /* flip speed goes here */
@@ -64,48 +64,6 @@
 	
 }
 
-/**
- * 	modal style
- */
-.flip-modal{
-	width: 500px;
-	margin: 100px auto;
-	padding: 20px;
-	background: #fefefe;
-	border-radius: 3px;
-	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.3);
-}
 
-.flip-modal p{
-	margin: 20px;
-	font: 15px Arial, Helvetica, sans-serif;
-}
 
-.flip-modal button{
-	padding: 7px 30px;
-	background: #888888;
-	color: white;
-	border: 0px none;
-	border-radius: 3px;
-	cursor: pointer;
-}
-
-.flip-modal .right{
-	text-align: right;
-}
-
-/**
- * 	large buttons style
- */
-.large-buttons{
-	padding: 10px 30px;
-	font: 15px Arial;
-	display: block;
-	background: #51749C;
-	color: #FFFFFF;
-	border: 0px none;
-	border-radius: 5px;
-	margin: 30px auto;
-	cursor: pointer;
-}
 

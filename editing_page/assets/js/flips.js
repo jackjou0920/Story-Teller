@@ -6,7 +6,9 @@ function flip_dialog(message, html) {
     
 	$('.flip-container').addClass('hover');
 
-	$("#comment").hide();
+	$("#comment").hide(1500);
+	$(".end-line").hide(2000);
+	document.getElementById("front").style.visibility='hidden';
   	
 }
 
@@ -15,7 +17,9 @@ function flip_dialog2(message, html) {
 	
 	$('.flip-container').removeClass('hover');
 	
-	$("#comment").show();
+	$("#comment").show(1500);
+	$(".end-line").show(2000);
+	document.getElementById("front").style.visibility='visible';
 	
 }
 
