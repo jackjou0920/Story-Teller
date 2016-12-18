@@ -30,7 +30,11 @@
 	margin-top: 100px;
 }
 .tttop{
-	margin-top: 180px;
+	margin-top: 150px;
+}
+.ttttop{
+  /*float:right;*/
+  margin-top: 30px;
 }
 .icon-left{
 	padding-left: 40%;	
